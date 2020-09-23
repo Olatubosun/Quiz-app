@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="answer these questions"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1:The mass of an atom is determined by:" />
+
+        <RadioGroup
+            android:id="@+id/yourRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp">
+
+            <RadioButton
+                android:id="@+id/option_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. its ionization potential" />
+            <!--        android:onClick="oneA"-->
+            <RadioButton
+                android:id="@+id/option_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. its electrochemical potential" />
+            <!--        android:onClick="oneB"-->
+            <RadioButton
+                android:id="@+id/option_C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. the number of protons" />
+            <!--        android:onClick="oneC"-->
+            <RadioButton
+                android:id="@+id/option_D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. the number of neutrons and protons" />
+            <!--        android:onClick="oneD"-->
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2:The atomic number of cesium is 55 and its atomicmass
+is 133. The nucleus of cesium atom therefore contains:" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. 78 protons and 55 electrons" />
+            <!--        android:onClick="twoA"-->
+            <RadioButton
+                android:id="@+id/right_op"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. 55 protons and 78 neutrons" />
+            <!--        android:onClick="twoB"-->
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. 55 neutrons and 78 electrons" />
+            <!--        android:onClick="twoC"-->
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. 78 neutron and 55 neutrons" />
+            <!--        android:onClick="twoD"-->
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3:The nucleus of the isotope tritium, contains" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. two neutrons with no protons" />
+            <!--        android:onClick="threeA"-->
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. one neutron and one proton" />
+            <!--        android:onClick="threeB"-->
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. two neutron and one electron" />
+            <!--        android:onClick="threeC"-->
+            <RadioButton
+                android:id="@+id/right_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. two neutron, one proton, and one electron" />
+            <!--        android:onClick="threeD"-->
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4:The oxidation state of chlorine in potassium chlorate is" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. +1" />
+            <!--       android:onClick="fourA"-->
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. +2" />
+            <!--        android:onClick="fourB"-->
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. +3" />
+            <!--  android:onClick="fourC"-->
+            <RadioButton
+                android:id="@+id/right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. +5" />
+            <!--        android:onClick="fourD"-->
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_5_which_of_the_following_statement_is_correct_about_the_periodic_table" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. Elements in the same period have the same number of valence electron" />
+
+            <RadioButton
+                android:id="@+id/answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. The valence electron of the elements in the same period increase progressively across the period" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. Elements in the same group have the same number of electron shells" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. The non-metallic properties of the elements tend to decrease across each period." />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_to_next_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="submitOrder"
+            android:text="submit" />
+
+
+    </LinearLayout>
+
+</ScrollView>
